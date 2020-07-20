@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"mass_measurement\startup_stm32f103xb.o"
+"mass_measurement\lcd.o"
+"mass_measurement\main.o"
+"mass_measurement\stm32f1xx_it.o"
+"mass_measurement\stm32f1xx_hal_msp.o"
+"mass_measurement\hx711.o"
+"mass_measurement\stm32f1xx_hal_gpio_ex.o"
+"mass_measurement\stm32f1xx_hal_tim.o"
+"mass_measurement\stm32f1xx_hal_tim_ex.o"
+"mass_measurement\stm32f1xx_hal.o"
+"mass_measurement\stm32f1xx_hal_rcc.o"
+"mass_measurement\stm32f1xx_hal_rcc_ex.o"
+"mass_measurement\stm32f1xx_hal_gpio.o"
+"mass_measurement\stm32f1xx_hal_dma.o"
+"mass_measurement\stm32f1xx_hal_cortex.o"
+"mass_measurement\stm32f1xx_hal_pwr.o"
+"mass_measurement\stm32f1xx_hal_flash.o"
+"mass_measurement\stm32f1xx_hal_flash_ex.o"
+"mass_measurement\stm32f1xx_hal_exti.o"
+"mass_measurement\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "mass_measurement\mass_measurement.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "mass_measurement.map" -o mass_measurement\mass_measurement.axf
